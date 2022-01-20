@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Admin
+    </title>
+    <link rel="stylesheet" href="/admin.css">
+</head>
+
+<body>
+    <a class="admin-btn" href="/user">Home</a>
+    <div class="search">
+        <form action="/admin/modify" method="POST" class="form">
+        <button style="align-self: center;" type="submit" class="btn">Create</button>
+            <input type="hidden" name="method" class="input" value="create">
+        </form>
+        <form action="/admin/modify" method="POST" class="form">
+            <button  style="align-self: center;" type="submit" class="btn">Update</button>
+            <input type="hidden" name="method" class="input" value="update">
+        </form>
+        <form action="/admin/modify" method="POST" class="form">
+            <button  style="align-self: center;" type="submit" class="btn">Delete</button>
+            <input type="hidden" name="method" value="delete" class="input">
+        </form>
+    </div>
+
+</body>

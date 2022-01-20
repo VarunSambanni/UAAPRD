@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Delete
+    </title>
+    <link rel="stylesheet" href="/admin.css">
+</head>
+
+<body>      
+    <a class="admin-btn" href="/admin/modify">Back</a>
+    <div class="search">
+        <form action="/admin/modify/delete" method="POST" class="create_form">
+            <div class="form_item">
+                <p class="form_p">Enter Protein UniProtID to be DELETED: </p>
+                <input type="text" name="uniprotId" class="form_input">
+            </div>
+            <button type="submit" class="btn">Delete</button>
+        </form> 
+    </div>
+
+</body>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Search
+    </title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+    <nav class="nav">
+        <h1 class="heading">Unified Aedes Aegypti Protein Resource Database</h1>
+        <h1 class="heading2">Unified Aedes Aegypti</h1>
+        <h1 class="heading2">Protein Resource Database</h1>
+        <a class="admin-btn" href="/admin/login">Admin</a>
+    </nav>
+    <div class="logo-wrapper">
+        <img src="logo.jpeg" class="logo">
+    </div>
+    <div class="search">
+        <form action="/user" method="POST" class="form">
+            <button type="submit" class="btn">Search</button>
+            <input type="text" placeholder="Search protein..." name="protein" class="input">
+        </form>
+    </div>
+    <p class="message"><%= message %></p>
+        <% if (proteins.length > 0) { %> 
+            <table class="display scale-in-center">
+                <tbody>
+            <tr>
+                <th>Name</th>
+                <th>UniProtID</th>
+                <th>Organism</th>
+                <th>Type</th>
+                <th>Mass</th>
+                <th>Length</th>
+                <th >Function</th>
+                <th>Validity</th>
+                <th>Score</th>
+                <th>X-Axis</th>
+                <th>Y-Axis</th>
+                <th>Z-Axis</th>
+                <th>Residues</th>
+                <th>PDB</th>
+                <th>PDF</th>
+            </tr>
+        <% for(let i = 0; i < proteins.length; i++) { %>
+            <tr class="row">
+            <td><%= proteins[i].name %></td>
+            <td><%= proteins[i].uniprotId %></td>
+            <td><%= proteins[i].organism %></td>
+            <td><%= proteins[i].type %></td>
+            <td><%= proteins[i].mass %></td>
+            <td><%= proteins[i].length %></td>
+            <td class="function"><%= proteins[i].function %></td>
+            <td><%= proteins[i].validity %></td>
+            <td><%= proteins[i].score %></td>
+            <td><%= proteins[i].x %></td>
+            <td><%= proteins[i].y %></td>
+            <td><%= proteins[i].z %></td>
+            <td class="residues"><%= proteins[i].residues %></td>
+            <td>
+            <!-- <form action = "/user/downloadPdb" method="POST" class="download-form">
+                <button class="download-btn" href="/admin/downloadPdb" name="name" value="<%= proteins[i].name %>">PDB</button>
+            </form> -->
+            <a class="download-btn" href="<%= proteins[i].drivePdbId %>">PDB</a>
+            </td>
+            <td>
+            <!-- <form action="/user/downloadPdf" method="POST" class="download-form">
+                <button class="download-btn" href="/admin/downloadPdf" name="name" value="<%= proteins[i].name %>">PDF</button>
+            </form> --> 
+            <a class="download-btn" href="<%= proteins[i].drivePdfId %>">PDF</a>
+            </td>
+            </tr>
+        <% } }%>  
+        </tbody>
+        </table>
+</body>
+<footer>
+</footer>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Create
+    </title>
+    <link rel="stylesheet" href="/admin.css">
+</head>
+
+<body>
+    <a class="admin-btn" href="/admin/modify">Back</a>
+    <div class="search">
+        <form action="/admin/modify/create" method="POST" class="create_form" enctype="multipart/form-data"> 
+            <div class="form_item">
+                <p class="form_p">Name: </p>
+                <input type="text" name="name" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">UniProtID: </p>
+                <input type="text" name="uniprotId" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Organism: </p>
+                <input type="text" name="organism" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Type: </p>
+                <input type="text" name="type" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Mass: </p>
+                <input type="text" name="mass" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Length: </p>
+                <input type="number" name="length" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Function: </p>
+                <input type="text" name="function" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">pdb: </p>
+                <input type="file" name="pdb" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">pdf: </p>
+                <input type="file" name="pdf" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Validity: </p>
+                <input type="text" name="validity" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Score: </p>
+                <input type="text" name="score" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">X-Axis: </p>
+                <input type="text" name="x" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Y-Axis: </p>
+                <input type="text" name="y" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Z-Axis: </p>
+                <input type="text" name="z" class="form_input">
+            </div>
+            <div class="form_item">
+                <p class="form_p">Residues: </p>
+                <input type="text" name="residues" class="form_input">
+            </div>
+            <button type="submit" class="btn">Create</button>
+        </form>
+    </div>
+
+</body>

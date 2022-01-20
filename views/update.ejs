@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Update
+    </title>
+    <link rel="stylesheet" href="/admin.css">
+</head>
+
+<body>
+    <a class="admin-btn" href="/admin/modify">Back</a>
+    <% if (!editMode || displayMode) { %>
+    <div class="search">
+        <form action="/admin/modify/update" method="POST" class="create_form">
+            <input type="hidden" name="displayMode" value="true">
+            <div class="form_item">
+                <p class="form_p">Enter Protein name to be UPDATED: </p>
+                <input type="text" name="name" class="form_input">
+            </div>
+            <button type="submit" class="btn">Update</button>
+        </form>
+    </div>
+    <% } %>
+    <% if (displayMode) { %> 
+        <% if (proteins.length> 0) { %>
+            <table class="display scale-in-center">
+                <tr>
+                    <th>Name</th>
+                    <th>UniProtID</th>
+                    <th>Organism</th>
+                    <th>Type</th>
+                    <th>Mass</th>
+                    <th>Length</th>
+                    <th class="function">Function</th>
+                    <th>Validity</th>
+                    <th>Score</th>
+                    <th>X-Axis</th>
+                    <th>Y-Axis</th>
+                    <th>Z-Axis</th>
+                    <th>Residues</th>
+                    <th>PDB/PDF</th>
+                    <th>Update</th>
+                </tr>
+                <% for(let i=0; i < proteins.length; i++) { %>
+                    <tr>
+                        <td>
+                            <%= proteins[i].name %>
+                        </td>
+                        <td>
+                            <%= proteins[i].uniprotId %>
+                        </td>
+                        <td>
+                            <%= proteins[i].organism %>
+                        </td>
+                        <td>
+                            <%= proteins[i].type %>
+                        </td>
+                        <td>
+                            <%= proteins[i].mass %>
+                        </td>
+                        <td>
+                            <%= proteins[i].length %>
+                        </td>
+                        <td class="function">
+                            <%= proteins[i].function %>
+                        </td>
+                        <td>
+                            <%= proteins[i].validity %>
+                        </td>
+                        <td>
+                            <%= proteins[i].score %>
+                        </td>
+                        <td>
+                            <%= proteins[i].x %>
+                        </td>
+                        <td>
+                            <%= proteins[i].y %>
+                        </td>
+                        <td>
+                            <%= proteins[i].z %>
+                        </td>
+                        <td class="residues">
+                            <%= proteins[i].residues %>
+                        </td>
+                        <td>
+                            <a class="download-btn" href="<%= proteins[i].drivePdbId %>">PDB</a>
+                            <a class="download-btn" href="<%= proteins[i].drivePdfId %>">PDF</a>
+                        </td>
+                        <td>
+                            <form action="/admin/modify/update" method="POST" class="download-form">
+                                <input type="hidden" name="id" value="<%= proteins[i].id %>">
+                                <input type="hidden" name="displayMode" value="false">
+                                <button class="download-btn" name="name" >Update</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <%  } }%>
+            </table>
+        <% } %> 
+        <% if (editMode) { %> 
+        <div class="search">
+            <form action="/admin/modify/update-form" method="POST" class="create_form" enctype="multipart/form-data">
+                <input type="hidden" name="id" value="<%= protein.id %>">
+                <input type="hidden" name="displayMode" value="false">
+                <div class="form_item">
+                    <p class="form_p">Name: </p>
+                    <input type="text" name="name" class="form_input" value='<%= protein.name%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">UniProtID: </p>
+                    <input type="text" name="uniprotId" class="form_input" value='<%= protein.uniprotId%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Organism: </p>
+                    <input type="text" name="organism" class="form_input" value='<%= protein.organism%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Type: </p>
+                    <input type="text" name="type" class="form_input" value='<%= protein.type%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Mass: </p>
+                    <input type="text" name="mass" class="form_input" value='<%= protein.mass%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Length: </p>
+                    <input type="number" name="length" class="form_input" value='<%= protein.length%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Function: </p>
+                    <input type="text" name="function" class="form_input" value='<%= protein.function%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">pdb: </p>
+                    <input type="file" name="pdb" class="form_input">
+                </div>
+                <div class="form_item">
+                    <p class="form_p">pdf: </p>
+                    <input type="file" name="pdf" class="form_input">
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Validity: </p>
+                    <input type="text" name="validity" class="form_input" value='<%= protein.validity%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Score: </p>
+                    <input type="text" name="score" class="form_input" value='<%= protein.score%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">X-Axis: </p>
+                    <input type="text" name="x" class="form_input" value='<%= protein.x%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Y-Axis: </p>
+                    <input type="text" name="y" class="form_input" value='<%= protein.y%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Z-Axis: </p>
+                    <input type="text" name="z" class="form_input" value='<%= protein.z%>'>
+                </div>
+                <div class="form_item">
+                    <p class="form_p">Residues: </p>
+                    <input type="text" name="residues" class="form_input" value='<%= protein.residues%>'>
+                </div>
+                <button type="submit" class="btn">Update</button>
+            </form>
+        </div>
+    <% } %> 
+</body>
