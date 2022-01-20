@@ -1,0 +1,163 @@
+body {
+  margin: 0.2em;
+  font-family: "Calibri";
+  background-color: rgb(236, 242, 255);
+}
+
+.heading_container {
+  color: rgb(78, 74, 74);
+  display: flex;
+}
+.heading {
+  align-self: center;
+}
+
+.admin-btn {
+  position: relative;
+  float: right;
+  margin: 0.5em;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 0.1em;
+  width: 4em;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: rgb(136, 177, 255);
+  font-weight: 800;
+}
+
+.admin-btn:hover,
+.admin-btn:active {
+  background-color: rgb(52, 114, 231);
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.search {
+  border: 1px solid rgb(236, 242, 255);
+}
+
+.create_form {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  margin-left: 46.8%;
+  margin-right: 50%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 6em;
+  height: 2em;
+  background-color: rgb(190, 131, 245);
+  font-weight: 600;
+  border-radius: 0.2em;
+  font-size: 1.5em;
+  border: 1px solid black;
+}
+
+.btn:hover,
+.btn:active,
+.download-btn:hover,
+.download-btn:active {
+  background-color: rgb(129, 41, 212);
+  color: white;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.input {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 50%;
+  margin-right: 50%;
+  width: 20em;
+  font-size: 1.2em;
+}
+
+.display {
+  border-collapse: collapse;
+  background-color: rgb(250, 243, 143);
+  border: 4px solid rgb(104, 104, 17);
+}
+th {
+  font-weight: 550;
+}
+th,
+td {
+  border: 2px solid black;
+  padding: 0.2em;
+  text-align: center;
+}
+
+td {
+  height: 1em;
+}
+
+.message {
+  font-weight: 800;
+  width: fit-content;
+}
+
+p {
+  margin: 0.4em;
+  align-self: center;
+  font-size: 1.4em;
+}
+
+.function {
+  width: 22em;
+}
+
+.residues {
+  width: 14em;
+}
+
+.download-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-btn {
+  display: block;
+  align-self: center;
+  margin: 0.1em;
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 0.1em;
+  width: 4em;
+  font-size: 1em;
+  text-align: center;
+  background-color: rgb(136, 177, 255);
+  font-weight: 400;
+}
+
+.form {
+  margin-top: 4em;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.form_item {
+  align-self: center;
+  display: flex;
+}
+
+.form_p {
+  margin: 0.5em;
+  width: 5em;
+  display: inline;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.form_input {
+  align-self: center;
+  margin-top: 0.2em;
+  margin-bottom: 0.2em;
+  margin-left: 1em;
+  width: 20em;
+  font-size: 1.2em;
+}
