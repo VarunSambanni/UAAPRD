@@ -18,14 +18,15 @@ When the user searches for a protein, a dropdown list consisting of all the prot
   
 The admins can login to make any changes to the database if required. The authentication is implemented by sessions.  
   
-## Adming Login Page  
+## Admin Login Page  
 
 ![3](https://user-images.githubusercontent.com/87132174/159534801-7dd7d579-a2b0-4ebb-ae5f-ff74e392c685.jpg)  
-<p>&nbsp;</p> 
-  
-Creating, Updating or Deleting operations can be performed on the database. The files are uploaded to Google Drive, using the Google Drive API.   
-  
-  
+<p>&nbsp;</p>  
+
+Creating, Updating or Deleting operations can be performed on the database. The files are uploaded to Google Drive, using the Google Drive API.  
+
+## Admin Modify Page  
+
 ![4](https://user-images.githubusercontent.com/87132174/159535576-765f9335-a8d2-47d6-9f01-db41bbb15154.jpg)  
 <p>&nbsp;</p> 
   
