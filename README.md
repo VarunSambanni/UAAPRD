@@ -1,5 +1,6 @@
 # UAAPRD
-[Link to the website](http://uaaprd.herokuapp.com/user)
+[Link to the website](http://uaaprd.herokuapp.com/user)  
+
 A web application for managing and viewing a database of proteins. The app allows users to query proteins and download files from the cloud. It also allows admins to perform CRUD operations on the database, as well as upload files to the cloud. Built mainly using NodeJS, ExpressJs and MySQL. The PDF, PDB files are stored on Google Drive, and the SQL database hosted on a remote server.  
 
 <br/> 
