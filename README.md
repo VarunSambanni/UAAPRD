@@ -3,7 +3,9 @@
 
 A web application for managing and viewing a database of proteins. The app allows users to query proteins and download files from the cloud. It also allows admins to perform CRUD operations on the database, as well as upload files to the cloud. Built mainly using NodeJS, ExpressJs and MySQL. The PDF, PDB files are stored on Google Drive, and uploaded to the server using the multer package. The SQL database is hosted on a remote server, and the server is deployed on Heroku.  
 
-<br/> 
+<br/>  
+
+## Home Page  
 
 ![1](https://user-images.githubusercontent.com/87132174/159533885-8a3fea35-0c16-4a0f-a014-5e35c1ebebae.jpg)  
 
@@ -13,7 +15,7 @@ A web application for managing and viewing a database of proteins. The app allow
   <img src="https://user-images.githubusercontent.com/87132174/159538832-057ee906-8710-4081-81d3-b7003e1b2ee9.jpg" alt="Mobile View"/>
 </p>  
 <p>&nbsp;</p>
-When the user searches for a protein, a dropdown list consisting of all the protein names available in the database currently, are shown. Once the user hits enter all the proteins with the given name are displayed, which makes it convenient for the user to search, and also know which proteins are present in the database.  
+When the user searches for a protein, a dropdown list consisting of all the protein names available in the database currently, are shown. Once the user starts typing, all the proteins with the given name are displayed, which makes it convenient for the user to search, and also know which proteins are present in the database.  
 
 <br/> 
 
