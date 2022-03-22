@@ -18,8 +18,11 @@ A web application for managing and viewing a database of proteins. The app allow
 
 Once the user starts typing, all the proteins with the given name are displayed, which makes it convenient for the user to search, and also know which proteins are present in the database. The use hits enter, and the required information is sent to the user from the server.  
 
+<p>&nbsp;</p>
 
-![2](https://user-images.githubusercontent.com/87132174/159534392-15ef85eb-0c4e-4490-ab31-1699a6444745.jpg)  
+<p>
+  <img src="https://user-images.githubusercontent.com/87132174/159534392-15ef85eb-0c4e-4490-ab31-1699a6444745.jpg" alt="Mobile View"/>
+</p> 
 <p>&nbsp;</p>
   
 The admins can login to make any changes to the database if required. The authentication is implemented by sessions.  
