@@ -1,7 +1,7 @@
 # UAAPRD
 
 A web application for managing and viewing a database of proteins. The app allows users to query proteins and download files from the cloud. It also allows admins to perform CRUD operations on the database, as well as upload files to the cloud. Built mainly using NodeJS, ExpressJs and MySQL. The PDF, PDB files are stored on Google Drive, and the SQL database hosted on a remote server.  
-<p>&nbsp;</p>
+
 ![1](https://user-images.githubusercontent.com/87132174/159533885-8a3fea35-0c16-4a0f-a014-5e35c1ebebae.jpg)  
 <p>&nbsp;</p>
 <p align="center">
