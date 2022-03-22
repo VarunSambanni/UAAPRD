@@ -4,6 +4,7 @@ A web application for managing and viewing a database of proteins. The app allow
 
 ![1](https://user-images.githubusercontent.com/87132174/159533885-8a3fea35-0c16-4a0f-a014-5e35c1ebebae.jpg)  
 <p>&nbsp;</p>
+**Mobile View**
 <p align="center">
   <img src="https://user-images.githubusercontent.com/87132174/159538832-057ee906-8710-4081-81d3-b7003e1b2ee9.jpg" alt="Mobile View"/>
 </p>  
@@ -25,19 +26,19 @@ Creating, Updating or Deleting operations can be performed on the database. The 
 ![4](https://user-images.githubusercontent.com/87132174/159535576-765f9335-a8d2-47d6-9f01-db41bbb15154.jpg)  
 <p>&nbsp;</p> 
   
-Form for creating a protein:   
+**Form for creating a protein**
   
   
 ![5](https://user-images.githubusercontent.com/87132174/159535775-c8b40458-279c-4751-9e3a-5df52a27b6fa.jpg)  
 <p>&nbsp;</p> 
   
-Updating a protein:  
+**Updating a protein**
   
   
 ![6](https://user-images.githubusercontent.com/87132174/159536115-33eb7bc4-9836-4468-9835-7d2f42cbdf8f.jpg)  
 <p>&nbsp;</p>
   
-Deleting a protein:  
+**Deleting a protein**  
   
   
 ![7](https://user-images.githubusercontent.com/87132174/159536364-75649c8e-588e-4f97-a0a5-ba01e15dd68f.jpg)
