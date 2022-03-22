@@ -14,6 +14,8 @@ A web application for managing and viewing a database of proteins. The app allow
 <p>&nbsp;</p>
 When the user searches for a protein, a dropdown list consisting of all the protein names available in the database currently, are shown. Once the user hits enter all the proteins with the given name are displayed, which makes it convenient for the user to search, and also know which proteins are present in the database.  
 
+<br/>  
+
 ![2](https://user-images.githubusercontent.com/87132174/159534392-15ef85eb-0c4e-4490-ab31-1699a6444745.jpg)  
 <p>&nbsp;</p>
   
