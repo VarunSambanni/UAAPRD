@@ -1,6 +1,6 @@
 # UAAPRD
 
-![Uploading arch_uaaprd.png…]()
+<img width="1149" height="1369" alt="arch_uaaprd" src="https://drive.google.com/file/d/16WLWVFKRTVjfvsThSajk6i09Oc_MO_UY/view?usp=sharing" />
 
 
 A web application for managing and viewing a database of proteins. The app allows users to query proteins and download files. It also allows admins to perform CRUD operations on the database, as well as upload files to the cloud. Built mainly using NodeJS, ExpressJs and MySQL. The PDF, PDB files are stored on Google Drive, and uploaded to the server using the multer package. SQL database is hosted on a remote server. 
